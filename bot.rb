@@ -47,8 +47,8 @@ class DialogTwilio
         }
       },
       creator: {
-        creator_distinct_id: 'bot_id',
-        creator_type: 'bot'
+        distinct_id: 'bot_id',
+        type: 'bot'
       }
     }.deep_merge(dialog_attributes(params))
 
