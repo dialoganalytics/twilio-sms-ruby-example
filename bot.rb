@@ -3,6 +3,8 @@ require 'sinatra'
 require 'twilio-ruby'
 require 'dialog-api'
 
+require 'active_support/core_ext/hash'
+
 # Load environment variables from .env
 require 'dotenv'
 Dotenv.load
