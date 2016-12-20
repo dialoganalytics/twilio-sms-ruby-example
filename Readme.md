@@ -18,11 +18,11 @@ DIALOG_API_TOKEN=...
 DIALOG_BOT_ID=...
 ```
 
-Get your Twilio Account SID and Auth Token from www.twilio.com/console
+Get your Twilio Account SID and Auth Token from http://www.twilio.com/console
 
-Get a Twilio phone number from www.twilio.com/console/phone-numbers and set the webhook callback to the endpoint on which this server will be listening.
+Get a Twilio phone number from http://www.twilio.com/console/phone-numbers, create a Programmable SMS service and set the __inbound settings__ request url to the endpoint on which this server will be listening: this should be something like `https://f562681e.ngrok.io/sms`.
 
-__Local development:__ When developping locally, use a service like https://ngrok.com to expose a server running on your machine. This should be something like `https://f562681e.ngrok.io/sms`
+__Local development:__ When developping locally, use a service like https://ngrok.com to expose a server running on your machine.
 
 ```bash
 $ ngrok http 4567
