@@ -74,8 +74,8 @@ end
 
 # Create a Dialog API client
 client = Dialog.new({
-  api_token: ENV,fetch('DIALOG_API_TOKEN'),
-  bot_id: ENV,fetch('DIALOG_BOT_ID'),
+  api_token: ENV.fetch('DIALOG_API_TOKEN'),
+  bot_id: ENV.fetch('DIALOG_BOT_ID'),
   on_error: Proc.new do |status, message, detail|
     p [status, message, detail]
   end
