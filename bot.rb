@@ -20,7 +20,6 @@ class DialogTwilio
   def incoming(params)
     payload = {
       message: {
-        distinct_id: params['MessageSid'],
         sent_at: Time.now.to_f,
         properties: {
           text: params['Body']
@@ -40,7 +39,6 @@ class DialogTwilio
   def outgoing(params, message)
     payload = {
       message: {
-        distinct_id: SecureRandom.uuid,
         sent_at: Time.now.to_f,
         properties: {
           text: message
