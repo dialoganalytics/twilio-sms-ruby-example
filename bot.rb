@@ -59,8 +59,8 @@ class DialogTwilio
   def dialog_attributes(params)
     {
       message: {
-        platform: 'sms',
-        provider: 'twilio',
+        platform: 'twilio-sms',
+        provider: 'dialog-ruby',
         mtype: 'text'
       },
       conversation: {
