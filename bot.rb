@@ -27,7 +27,8 @@ class DialogTwilio
       },
       creator: {
         distinct_id: params['From'],
-        type: 'interlocutor'
+        type: 'interlocutor',
+        phone: params['From']
       }
     }.deep_merge(dialog_attributes(params))
 
