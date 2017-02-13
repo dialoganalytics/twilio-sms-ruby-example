@@ -55,7 +55,7 @@ DEPENDENCIES
   activesupport (>= 5)
   dialog-api
   dotenv
-  sinatra
+  sinatra (~> 1.4)
   twilio-ruby
 
 BUNDLED WITH
